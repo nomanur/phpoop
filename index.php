@@ -1,14 +1,25 @@
 <?php
 
-require 'bootstrap.php';
+require 'core/bootstrap.php';
 //require 'function.php';
 
+$router = new Router();
+
+require 'Routes.php';
+
+$uri = trim($_SERVER['REQUEST_URI'], '/');
+
+$s = $router->direct($uri);
 
 $tasks = $query->selectAll('todos');
 
+
+
+
 require 'index.view.php';
 
-// var_dump(trim($_SERVER['REQUEST_URI'], '/'));
+
+//var_dump(($_SERVER['REQUEST_METHOD']));
 
 // class Test
 // {
