@@ -8,9 +8,7 @@ $tasks = $query->selectAll('todos');
 
 require 'index.view.php';
 
-
 // var_dump(trim($_SERVER['REQUEST_URI'], '/'));
-
 
 // class Test
 // {
@@ -88,3 +86,113 @@ require 'index.view.php';
 // }
 
 // $ab = new TestAbstract();
+
+// interface InterTest
+// {
+//     public function testinter(array $t, string $r, bool $s);
+// }
+
+
+// class Inter implements InterTest
+// {
+
+//     public function testinter(array $t, string $r, bool $s)
+//     {
+//         var_dump($t);
+//     }
+// }
+
+
+// $obj = new Inter();
+
+// $obj->testinter(['111'], 'dddd', true);
+
+
+//method chaining
+
+// class M
+// {
+
+//     public $p;
+//     public $s;
+
+//     public function a()
+//     {
+//         $this->p = "first";
+
+//         return $this;
+//     }
+
+//     public function b()
+//     {
+//         $this->s = "second";
+
+//         return $this;
+//     }
+
+//     public function c()
+//     {
+//         echo $this->p . ' and ' . $this->s;
+//     }
+// }
+
+// $obj = new M();
+
+// $obj->a()->b()->c();
+
+
+// class Teststatic
+// {
+//     public static $p;
+//     public static $s;
+
+//     public static function a()
+//     {
+//         self::$p = "first static";
+
+//         return new self;
+//     }
+
+//     public static function b()
+//     {
+//         self::$s = "second static";
+
+//         return new self;
+//     }
+
+//     public static function c()
+//     {
+//         echo self::$p . ' and ' . self::$s;
+//     }
+// }
+
+// Teststatic::a()->b()->c();
+
+// class E
+// {
+//     public $v;
+
+//     public function __construct($a)
+//     {
+//         $this->v = $a;
+//     }
+// }
+
+
+// class F extends E
+// {
+//     public function __construct($n)
+//     {
+//         parent::__construct($n);
+//     }
+
+
+//     public function show()
+//     {
+//         echo $this->v;
+//     }
+// }
+
+// $obj = new F("john");
+
+// $obj->show();
