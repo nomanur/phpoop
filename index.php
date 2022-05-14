@@ -9,14 +9,11 @@ require 'Routes.php';
 
 $uri = trim($_SERVER['REQUEST_URI'], '/');
 
-$s = $router->direct($uri);
 
 $tasks = $query->selectAll('todos');
 
-
-
-
-require 'index.view.php';
+require $router->direct($uri);
+//require 'index.view.php';
 
 
 //var_dump(($_SERVER['REQUEST_METHOD']));

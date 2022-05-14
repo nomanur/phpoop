@@ -2,5 +2,8 @@
 
 
 $router->define([
-    'phpoopsecond/about' => 'about.view.php'
+    '' => 'view/index.view.php',
+    'about' => 'view/about.view.php',
+    'contact' => 'view/contact.view.php',
+    'profile' => 'view/profile.view.php'
 ]);
