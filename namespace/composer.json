@@ -1,0 +1,6 @@
+{
+    "require": {
+        "dompdf/dompdf": "^1.2",
+        "nesbot/carbon": "^2.58"
+    }
+}
